@@ -1,0 +1,7 @@
+SELECT e.deposit_group,
+SUM(e.deposit_amount)
+AS 'total_sum'
+FROM wizzard_deposits
+AS e
+GROUP BY e.deposit_group
+ORDER BY total_sum

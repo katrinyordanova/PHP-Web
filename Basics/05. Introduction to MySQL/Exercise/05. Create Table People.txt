@@ -1,0 +1,22 @@
+CREATE TABLE `people`(
+`id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+`name` VARCHAR(200) NOT NULL,
+`picture` BLOB NULL,
+`height` FLOAT NULL,
+`weight` FLOAT NULL,
+`gender` CHAR NOT NULL,
+`birthdate` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+`biography` TEXT NULL
+);
+INSERT INTO `people` (name,picture,height,weight,gender,biography)
+VALUES
+('Nakov',LOAD_FILE('c:\\users\kati\desktop\Nakov-and-his-brother.jpg'),
+1.89,85,'m','biography'),
+('Nakov2',LOAD_FILE('c:\\users\kati\desktop\Nakov-teaching-code-course.jpg'),
+1.99,85,'f','biography'),
+('Nakov3',LOAD_FILE('c:\\users\kati\desktop\Nakov-in-the-cave-1.jpg'),
+1.69,85,'m','biography'),
+('Nakov4',LOAD_FILE('c:\\users\kati\desktop\Nakov-and-Yavor-at-Krushuna.jpg'),
+1.49,85,'f','biography'),
+('Nakov5',LOAD_FILE('c:\\users\kati\desktop\Nakov-dancing.jpg'),
+1.00,85,'f','biography');

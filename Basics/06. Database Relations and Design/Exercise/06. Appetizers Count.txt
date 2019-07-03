@@ -1,0 +1,4 @@
+SELECT COUNT(e.category_id)
+AS `COUNT(category_id)`
+FROM products AS e
+WHERE e.category_id = 2 AND e.price>8

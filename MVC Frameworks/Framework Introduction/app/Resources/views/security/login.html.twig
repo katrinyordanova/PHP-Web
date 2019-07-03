@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <form name="authenticate" action="{{ path('security_login') }}" method="post">
+        Email: <input type="text" name="_username">
+        Password: <input type="text" name="_password">
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+        <button type="submit">Login</button>
+    </form>
+{% endblock %}

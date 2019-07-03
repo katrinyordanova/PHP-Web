@@ -1,0 +1,15 @@
+CREATE TABLE `users`(
+`id` BIGINT PRIMARY KEY AUTO_INCREMENT,
+`username` VARCHAR(30) NOT NULL ,
+`password` VARCHAR(26) NOT NULL,
+`profile_picture` BLOB ,
+`last_login_time` DATETIME DEFAULT '0000-00-00 00:00:00',
+`is_deleted` VARCHAR(5)
+);
+INSERT INTO `users` (username,`password`,profile_picture,last_login_time,is_deleted)
+VALUES 
+('Penka','dsdfsdf','c:\\users\kati\desktop\Nakov-and-his-brother.jpg','4826-05-06 12:55:52','false'),
+('pesho','dsfs','c:\\users\kati\desktop\Nakov-and-his-brother.jpg','4526-05-06 12:55:52','false'),
+('dsfsd','cz', 'c:\\users\kati\desktop\Nakov-and-his-brother.jpg','4526-05-06 12:55:52','false'),
+('bvcb','vvgg','c:\\users\kati\desktop\Nakov-and-his-brother.jpg','4526-05-06 12:55:52','false'),
+('gara','kklhjh','c:\\users\kati\desktop\Nakov-and-his-brother.jpg','4526-05-06 12:55:52','false');
